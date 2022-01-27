@@ -1,0 +1,120 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-27T06:35:27.594Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4623000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.startTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login with valid email and password",
+        "description": "",
+        "id": "login-feature-test;login-with-valid-email-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.endTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at TalentTek Sign in page",
+            "match": {
+              "location": "stepDef.LoginStep.iAmAtTalentTekSignInPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 195000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter valid email address",
+            "match": {
+              "location": "stepDef.LoginStep.iEnterValidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter valid password",
+            "match": {
+              "location": "stepDef.LoginStep.iEnterValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on login button",
+            "match": {
+              "location": "stepDef.LoginStep.iClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 290000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be able to successfully login",
+            "match": {
+              "location": "stepDef.LoginStep.iShouldBeAbleToSuccessfullyLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@prePost"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Test",
+    "description": "",
+    "id": "login-feature-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  }
+]
