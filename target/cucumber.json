@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-01-27T06:35:27.594Z",
+        "start_timestamp": "2022-02-01T14:31:16.993Z",
         "before": [
           {
             "result": {
-              "duration": 4623000000,
+              "duration": 5354000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Login with valid email and password",
+        "line": 12,
+        "name": "login with specific credentials",
         "description": "",
-        "id": "login-feature-test;login-with-valid-email-and-password",
+        "id": "login-with-multiple-users-data;login-with-specific-credentials;;2",
         "after": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -31,90 +31,300 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 38000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "I am at TalentTek Sign in page",
+            "name": "user in a home page",
             "match": {
-              "location": "stepDef.LoginStep.iAmAtTalentTekSignInPage()"
+              "location": "stepDef.ScenarioOutlineSteps.userInAHomePage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 195000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "I enter valid email address",
+            "name": "user enter in a User Id as \"abc@123\"",
             "match": {
-              "location": "stepDef.LoginStep.iEnterValidEmailAddress()"
+              "arguments": [
+                {
+                  "val": "\"abc@123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDef.ScenarioOutlineSteps.userEnterInAUserIdAs(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 113000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "I enter valid password",
+            "name": "user enter in a Password as \"a123\"",
             "match": {
-              "location": "stepDef.LoginStep.iEnterValidPassword()"
+              "arguments": [
+                {
+                  "val": "\"a123\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDef.ScenarioOutlineSteps.userEnterInAPasswordAs(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 77000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "I click on login button",
+            "name": "user clicked on login button",
             "match": {
-              "location": "stepDef.LoginStep.iClickOnLoginButton()"
+              "location": "stepDef.ScenarioOutlineSteps.userClickedOnLoginButton()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 290000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "I should be able to successfully login",
+            "name": "User should be able to logged in successfully",
             "match": {
-              "location": "stepDef.LoginStep.iShouldBeAbleToSuccessfullyLogin()"
+              "location": "stepDef.ScenarioOutlineSteps.userShouldBeAbleToLoggedInSuccessfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@scenarioOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-01T14:31:22.379Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3710000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.startTest()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "login with specific credentials",
+        "description": "",
+        "id": "login-with-multiple-users-data;login-with-specific-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.endTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user in a home page",
+            "match": {
+              "location": "stepDef.ScenarioOutlineSteps.userInAHomePage()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@smoke"
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter in a User Id as \"def@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"def@123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDef.ScenarioOutlineSteps.userEnterInAUserIdAs(java.lang.String)"
+            },
+            "keyword": "And "
           },
           {
-            "name": "@regression"
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter in a Password as \"b456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"b456\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDef.ScenarioOutlineSteps.userEnterInAPasswordAs(java.lang.String)"
+            },
+            "keyword": "And "
           },
           {
-            "name": "@prePost"
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicked on login button",
+            "match": {
+              "location": "stepDef.ScenarioOutlineSteps.userClickedOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to logged in successfully",
+            "match": {
+              "location": "stepDef.ScenarioOutlineSteps.userShouldBeAbleToLoggedInSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@scenarioOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-01T14:31:26.097Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3571000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.startTest()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "login with specific credentials",
+        "description": "",
+        "id": "login-with-multiple-users-data;login-with-specific-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.endTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user in a home page",
+            "match": {
+              "location": "stepDef.ScenarioOutlineSteps.userInAHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter in a User Id as \"xyz@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"xyz@123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDef.ScenarioOutlineSteps.userEnterInAUserIdAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter in a Password as \"c789\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"c789\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDef.ScenarioOutlineSteps.userEnterInAPasswordAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicked on login button",
+            "match": {
+              "location": "stepDef.ScenarioOutlineSteps.userClickedOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to logged in successfully",
+            "match": {
+              "location": "stepDef.ScenarioOutlineSteps.userShouldBeAbleToLoggedInSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@scenarioOutline"
           }
         ]
       }
     ],
-    "name": "Login Feature Test",
+    "name": "Login with multiple users data",
     "description": "",
-    "id": "login-feature-test",
+    "id": "login-with-multiple-users-data",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/login.feature",
+    "uri": "file:src/test/java/features/scenarioOutline.feature",
     "tags": []
   }
 ]
